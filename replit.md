@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a full-stack web application built as a GST (Goods and Services Tax) calculator. The application follows a modern React-based frontend with an Express.js backend architecture, designed for calculating GST amounts both inclusive and exclusive of tax rates.
+This is a full-stack web application built as a GST (Goods and Services Tax) calculator. The application follows a modern React-based frontend with an Express.js backend architecture, designed for calculating GST amounts both inclusive and exclusive of tax rates. The calculator supports both standard and custom GST rates, and provides Indian tax system compliance with IGST vs CGST/SGST breakdown calculations.
 
 ## User Preferences
 
@@ -37,7 +37,12 @@ Preferred communication style: Simple, everyday language.
 
 ### Frontend Components
 - **UI Library**: Complete Shadcn/ui component set including forms, dialogs, navigation, and data display components
-- **Main Application**: GST Calculator with dual input modes (inclusive/exclusive tax calculation)
+- **Main Application**: Enhanced GST Calculator with:
+  - Dual input modes (inclusive/exclusive tax calculation)
+  - Custom GST rate input functionality
+  - Indian tax system compliance (IGST vs CGST/SGST selection)
+  - Automatic tax breakdown for CGST/SGST (50/50 split)
+  - Standard GST rates (0.25%, 3%, 5%, 12%, 18%, 28%)
 - **Router**: Simple wouter-based routing with 404 handling
 - **Query Client**: Configured TanStack Query client with custom fetch utilities
 
